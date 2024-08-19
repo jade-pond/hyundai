@@ -47,9 +47,9 @@ if page == "서현봇":
     st.write("---")
     
     # 텍스트 파일 URL 설정 (고정된 경로)
-    url_experience = "https://raw.githubusercontent.com/jade-pond/seohyunbot/main/Experience.txt"
-    url_motivation = "https://raw.githubusercontent.com/jade-pond/seohyunbot/main/Motivation.txt"
-    url_personality = "https://raw.githubusercontent.com/jade-pond/seohyunbot/main/Personality.txt"
+    url_experience = "https://raw.githubusercontent.com/jade-pond/hyundai/main/Experience.txt"
+    url_motivation = "https://raw.githubusercontent.com/jade-pond/hyundai/main/Motivation.txt"
+    url_personality = "https://raw.githubusercontent.com/jade-pond/hyundai/main/Personality.txt"
 
     def load_txt_from_url(url):
         response = requests.get(url)
@@ -106,7 +106,7 @@ if page == "서현봇":
             # 시스템 프롬프트 추가
             system_prompt = (
                 "당신은 지서현을 대변하는 챗봇입니다. "
-                "주어진 JSON 데이터를 활용하여, 카카오 커머스 조직에서의 기여 가능성을 설명하세요. "
+                "주어진 JSON 데이터를 활용하여, 현대자동차의 커머스 및 결제 서비스 기획 및 운영 조직에서의 기여 가능성을 설명하세요. "
                 "답변은 간결하고 설득력 있게 작성하고, 단점은 해결하려는 노력과 함께 설명하세요. "
                 "가능하다면, 이전 프로젝트에서 얻은 결과를 강조하세요."
             )
@@ -125,11 +125,11 @@ if page == "서현봇":
 
 elif page == "추천서":
     st.title("📄 추천서")
-    st.image("https://github.com/jade-pond/seohyunbot/raw/main/referenceletter.jpg", caption="추천서 이미지", use_column_width=True)
+    st.image("https://github.com/jade-pond/hyundai/raw/main/referenceletter.jpg", caption="추천서 이미지", use_column_width=True)
 
 elif page == "이력서":
     st.title("📃 이력서")
-    st.image("https://github.com/jade-pond/seohyunbot/raw/main/CV.jpg", caption="이력서 이미지", use_column_width=True)
+    st.image("https://github.com/jade-pond/hyundai/raw/main/CV.jpg", caption="이력서 이미지", use_column_width=True)
 
 elif page == "포트폴리오":
     st.title("📃 포트폴리오")
