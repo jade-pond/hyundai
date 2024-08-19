@@ -135,7 +135,7 @@ elif page == "포트폴리오":
     st.title("📃 포트폴리오")
 
     # Google Drive에서 PDF 파일을 직접 다운로드할 수 있는 링크로 변환
-    file_id = "1fDT2XCfEREVCPWmV2POAtXIarOWNUxab"
+    file_id = "12tySBAtmYbHKp9oEoyMslykiepX58_eI"
     pdf_url = f"https://drive.google.com/uc?export=download&id={file_id}"
     
     # PDF 파일 다운로드
