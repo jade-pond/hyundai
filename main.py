@@ -121,7 +121,7 @@ if page == "서현봇":
                 retriever=db.as_retriever()
             )
             result = qa_chain({"query": custom_prompt})
-            st.write(result['result'])  # 결과를 출력합니다.
+            st.write(result)  # 결과를 출력합니다.
 
 
 elif page == "추천서":
