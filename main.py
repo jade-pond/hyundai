@@ -83,7 +83,7 @@ if page == "서현봇":
 
     # Question
     st.header("궁금한 점을 말씀해주세요 :)")
-    st.markdown("🚀예시) 카카오 지원 동기가 무엇입니까?")
+    st.markdown("🚀예시) 현대자동차 지원 동기가 무엇입니까? 장점이 무엇입니까? 단점이 무엇입니까?")
 
     # 사용자가 입력한 질문을 세션 상태에 저장
     question = st.text_input(label="질문을 입력하세요:")
@@ -135,7 +135,7 @@ elif page == "포트폴리오":
     st.title("📃 포트폴리오")
 
     # Google Drive에서 PDF 파일을 직접 다운로드할 수 있는 링크로 변환
-    file_id = "1sBAv5dkKQD4PjxpXCwlHKqRoiJ92T9st"
+    file_id = "1fDT2XCfEREVCPWmV2POAtXIarOWNUxab"
     pdf_url = f"https://drive.google.com/uc?export=download&id={file_id}"
     
     # PDF 파일 다운로드
