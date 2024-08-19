@@ -14,15 +14,15 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
-#Stream 받아 줄 Handler 만들기
-from langchain.callbacks.base import BaseCallbackHandler
-class StreamHandler(BaseCallbackHandler):
-    def __init__(self, container, initial_text=""):
-        self.container = container
-        self.text = initial_text
-    def on_llm_new_token(self, token: str, **kwargs) -> None:
-        self.text += token
-        self.container.markdown(self.text)
+# #Stream 받아 줄 Handler 만들기
+# from langchain.callbacks.base import BaseCallbackHandler
+# class StreamHandler(BaseCallbackHandler):
+#     def __init__(self, container, initial_text=""):
+#         self.container = container
+#         self.text = initial_text
+#     def on_llm_new_token(self, token: str, **kwargs) -> None:
+#         self.text += token
+#         self.container.markdown(self.text)
 
 # 사이드바에 버튼 추가 (페이지 전환용)
 st.sidebar.title("안녕하세요!")
