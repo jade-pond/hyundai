@@ -90,15 +90,13 @@ if page == "서현봇":
     
     if st.button('enter'):
         with st.spinner('서현봇 로딩 중...'):
-            chat_box = st.empty()
-            stream_handler = StreamHandler(chat_box)
             
             # 온도 값을 높여서 유연한 답변 생성
             llm = ChatOpenAI(
                 # model_name="gpt-3.5-turbo", 
                 model_name="gpt-4",
                 temperature=0.1, 
-                streaming=True,
+                streaming=False,
                 callbacks=[stream_handler],
                 max_tokens=700
             )
@@ -121,7 +119,7 @@ if page == "서현봇":
                 retriever=db.as_retriever()
             )
             result = qa_chain({"query": custom_prompt})
-            st.write(result)  # 결과를 출력합니다.
+            st.write(result['result])  # 결과를 출력합니다.
 
 
 elif page == "추천서":
