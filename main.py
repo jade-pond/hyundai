@@ -97,7 +97,6 @@ if page == "서현봇":
                 model_name="gpt-4",
                 temperature=0.1, 
                 streaming=False,
-                callbacks=[stream_handler],
                 max_tokens=700
             )
             
